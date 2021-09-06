@@ -1,6 +1,8 @@
 # Objetivo mayoritario
 Trabajo realizado en la asignatura Programación y Estructuras de Datos Avanzadas (PREDA) en el Grado de Ingeniería Informática de la UNED. Consiste en calcular el elemento mayoritario de un vector mediante un algoritmo que sigue el esquema "**divide y vencerás**".
 
+El programa se ha desarrollado en Java siguiendo un diseño orientado a objetos.
+
 **Enunciado:**
 > _Dado un vector v[1..n] de número naturales, se quiere averiguar si existe un elemento mayoritario, es decir que aparezca al menos n/2+1 veces en el vector (n/2 es división entera)._
 
@@ -123,7 +125,29 @@ ffun
 
 
 # Código desarrollado
+Se han desarrollado las siguientes clases:
+- [Main.java](src/Main.java): Clase principal. Contiene el método main. Comprueba los argumentos de entrada y muestra la ayuda del programa.
+- [ValidaDatosCalculaMayoritario.java](src/ValidaDatosCalculaMayoritario.java): Clase que contiene los métodos utilizados para la validación de los datos, y lanzamiento del cálculo mayoritario.
+- [AlgoritmoDyV.java](src/AlgoritmoDyV.java): Clase que contiene el algoritmo recursivo para el cálculo mayoritario.
+- [ArrayAndStrings.java](src/ArrayAndStrings.java): Clase auxiliar. Esta clase proporciona funcionalidades básicas para trabajar con arrays de strings y strings en general.
+- [Escritura.java](src/Escritura.java): Clase auxiliar. Esta clase contiene los métodos utilizados para la escritura en consola y escritura en archivo.
+- [Lectura.java](src/Lectura.java): Clase auxiliar. Contiene los métodos utilizados para la lectura por consola y lectura por archivo.
 
+
+# Ejecución
+La práctica se invoca usando la siguiente sintaxis:
+```
+java mayoritario [-t][-h] [fichero_entrada] [fichero_salida]
+```
+o
+```
+java –jar mayoritario.jar [-t][-h] [fichero_entrada] [fichero_salida]
+```
+Los argumentos son los siguientes:
+- `-t`: traza cada paso de manera que se describa la aplicación del algoritmo utilizado.
+- `-h`: muestra una ayuda y la sintaxis del comando.
+- `fichero_entrada`: es el nombre del fichero del que se leen los datos de entrada. Consta de una primera línea que indica el número de elementos en el vector de enteros y una segunda línea con el propio vector. Si la entrada no es correcta, el programa debe indicarlo. En caso de que no exista el fichero, se utilizará la entrada estándar.
+- `fichero_salida`: es el nombre del fichero que se creará para almacenar la salida. Si el fichero ya existe, el comando dará un error. Si falta este argumento, el programa muestra el resultado por pantalla.
 
 # Bibliografía
 - PROGRAMACIÓN Y ESTRUCTURAS DE DATOS AVANZADAS, 1ª Reimpresión (julio 2016) - Ed. CEURA
