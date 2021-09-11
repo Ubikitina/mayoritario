@@ -150,4 +150,4 @@ Los argumentos son los siguientes:
 - `fichero_salida`: es el nombre del fichero que se creará para almacenar la salida. Si el fichero ya existe, el comando dará un error. Si falta este argumento, el programa muestra el resultado por pantalla.
 
 # Bibliografía
-- PROGRAMACIÓN Y ESTRUCTURAS DE DATOS AVANZADAS, 1ª Reimpresión (julio 2016) - Ed. CEURA
+- Araujo Serna, L., Martínez Unanue, R., & Rodríguez Artacho, M. (2011). _Programación y estructuras de datos avanzadas_. Madrid: Centro de Estudios Ramón Areces.
